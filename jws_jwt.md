@@ -9,4 +9,13 @@ JWS<br>
 - JWS Payload
 - JWS Signature
 
+JWS
+JOSE Headerの署名の対象データ(JWS Payload)は署名方式は何かを定義する。
+JSON形式になっている
+
+HeaderがJSONであればPayload部分もJSONNで行うのが自然
+そのための規格がJWT(Json Web Token)
+
+
+
 内容を知ってるコメディドラマ
