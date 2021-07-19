@@ -3,7 +3,7 @@
 公開鍵暗号：暗号化と複合化で異なる鍵を使用する
 
 BER(Basic Encoding Rules)
-ASN.1のバイナリー規則
+ASN.1のバイナリエンコード規則
 
 
 | Number  | 内容                                            | RFC  | 補足                                                 |

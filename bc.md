@@ -1,0 +1,188 @@
+## ５つのアウトプットの作成
+"txid": "deecfcf31247de4ddbe34087838aea3197cd661e061fdc0807824f738b8d93fe",
+    "vout": 0,
+#アドレス
+tb1qwvhjsycf2x2xvn6qdqe8h0aay0mwrzk4gfu4aa
+
+tb1qyauk8ht96l9yajlek6m7k0ysaqwawdmc88uqh2
+
+tb1q2gwq2cerapyjzqdxrtgfnx44vuaudshh6y5c9n
+
+tb1q0xvmc5ndq7zexhxvq3534dw5u7psamfca9ke5z
+
+tb1qf5ntlay2j8zlyu8xxd9rwunr4y6d3phdgaet5p
+
+古いアドレス
+Getnewaddress naoki legacy
+myhQRWvabJ1bGHLJYAUwaEmg62a2Mkh4xA
+
+
+# input
+’[{t”xid": "deecfcf31247de4ddbe34087838aea3197cd661e061fdc0807824f738b8d93fe",
+    "vout": 0,}]’
+```
+トランザクションの作成
+createrawtransaction '[{"txid":"deecfcf31247de4ddbe34087838aea3197cd661e061fdc0807824f738b8d93fe","vout":0}]' '[{"tb1qwvhjsycf2x2xvn6qdqe8h0aay0mwrzk4gfu4aa":0.008},
+{"tb1qyauk8ht96l9yajlek6m7k0ysaqwawdmc88uqh2":0.01},
+{"tb1q2gwq2cerapyjzqdxrtgfnx44vuaudshh6y5c9n":0.01},
+{"tb1q0xvmc5ndq7zexhxvq3534dw5u7psamfca9ke5z":0.01},
+{"tb1qf5ntlay2j8zlyu8xxd9rwunr4y6d3phdgaet5p":0.01}]'
+
+マルチシグ
+createmultisig 2 '["02e65554b6d8b64ec5dcc70f839b90c2b4981571fae15b110d1b1359c1da71e242","02a08dc7478c52b3f73e0a9ca3ae86da3afabac40e7897ad24b521e5fd7bde03c6","03914185e761ca91d6c687966cec4efa1d600b59185f18b1b22fc364d9970030c9"]' legacy
+
+addres 2MxeH5NfPysNttK63dCy74mw1GAzPmk7vuB
+```
+## bech32系統
+```
+getnewaddres naoki bech32
+tb1qpgkecutzhggnxn3jfeayjrf6dm682rsvtsmqn7
+tb1qekqwjn6jdydume899crlang30wcduwhh4edx3q
+tb1qxf5c8j77xyvc5cyxht8xjpsufmt0tg7hnlrr02
+
+02ad0da02c6669592d503375a2e8621ebb78f0fed71213ce4e076083fa03928fdc
+021be1cb1c47181b730ef183c62a704fd6d03f7318f3b702cb5f5a8fad7da8041e
+0398006618070ffc6d476a609011a1cc69c4afcc43b4205691c21607be7d3543f4
+
+createmultisig 2 '["02ad0da02c6669592d503375a2e8621ebb78f0fed71213ce4e076083fa03928fdc","021be1cb1c47181b730ef183c62a704fd6d03f7318f3b702cb5f5a8fad7da8041e","0398006618070ffc6d476a609011a1cc69c4afcc43b4205691c21607be7d3543f4"]' bech32
+
+tb1q568wjt07j2g2ff6xlg2d4ney08qyqgp23pg0rqn6gjqy8j405pgs94zj30
+```
+--------
+# トランザクションの作成
+21c0b240038ed1dd8bffba6e2ff2745f02877f12000e12fa57ac1432abfa8fcd
+vout:0 0.008
+vout:1 0.01
+vout:2 0.01
+vout:3 0.01
+vout:4 0.01
+
+myhQRWvabJ1bGHLJYAUwaEmg62a2Mkh4xA
+mriEVHj8D7s5rx1eAVwsf23UJFTxEkt53U
+mzN9qyauV8xd2LMKGQY6bMPXJ5q9aPtHRf
+msDkNTynoVbEmHyv2X2DXNGKHVUuesLkAw
+## P2PkH
+```
+createrawtransaction '[{"txid":"21c0b240038ed1dd8bffba6e2ff2745f02877f12000e12fa57ac1432abfa8fcd","vout":0}]' '[{"myhQRWvabJ1bGHLJYAUwaEmg62a2Mkh4xA":0.006},{"mriEVHj8D7s5rx1eAVwsf23UJFTxEkt53U":0.001}]'
+```
+createの結果
+0200000001cd8ffaab3214ac57fa120e00127f87025f74f22f6ebaff8bddd18e0340b2c0210000000000ffffffff02c0270900000000001976a914c76c3c1e6c8493a5e932cb4ba279fd5fbed06cab88aca0860100000000001976a9147acb7a1e9c6e053e6116895c41fbda1ba5a8de0488ac00000000
+
+signの結果
+02000000000101cd8ffaab3214ac57fa120e00127f87025f74f22f6ebaff8bddd18e0340b2c0210000000000ffffffff02c0270900000000001976a914c76c3c1e6c8493a5e932cb4ba279fd5fbed06cab88aca0860100000000001976a9147acb7a1e9c6e053e6116895c41fbda1ba5a8de0488ac0247304402200667c1b5050cf7cd894d4f0e192649608259db5301dde74c2cd6ff63e4efaa0d02206f64869cb54e1a6eccbccd7e37481895f8cca7c80e3bf5470393259e2b73580f0121022d5189a3fb6ca1d7e05093b50cf565ab496cff3b79e4e00436887b2133089d2800000000
+
+"txid" 11fb483ddadb28572dc7888e7608e4d5f8f7a918bbca24fa863227ef81cd35af
+
+## P2SH
+vout:1 0.01
+
+```
+createrawtransaction '[{"txid":"21c0b240038ed1dd8bffba6e2ff2745f02877f12000e12fa57ac1432abfa8fcd","vout":1}]' '[{"2MxeH5NfPysNttK63dCy74mw1GAzPmk7vuB":0.008}]'
+signrawtransactionwithwallet 
+0200000001cd8ffaab3214ac57fa120e00127f87025f74f22f6ebaff8bddd18e0340b2c0210100000000ffffffff0100350c000000000017a9143b34c60915d7ca56c785146b89041e232934878a8700000000
+
+decode
+02000000000101cd8ffaab3214ac57fa120e00127f87025f74f22f6ebaff8bddd18e0340b2c0210100000000ffffffff0100350c000000000017a9143b34c60915d7ca56c785146b89041e232934878a870247304402203762149fe32fd613310d693291f51804f7150091602c100dfc31cf84ea62d49b0220128e79f8083467eade74de3697903d349b635228dfeba8491b92ff9c03cd4cd801210248daa6eb1d6e3b526ce4b0ade02727cdaccac615ef6cb4709b88844c2b75f40100000000
+
+"txid": "4d888ddd116879ed031037fa4711eac4b49d6c795d11a7827d52e2125e994e53",
+```
+
+## P2wsh
+bech32のアドレス
+```
+createrawtransaction '[{"txid":"21c0b240038ed1dd8bffba6e2ff2745f02877f12000e12fa57ac1432abfa8fcd","vout":3}]' '[{"tb1q568wjt07j2g2ff6xlg2d4ney08qyqgp23pg0rqn6gjqy8j405pgs94zj30":0.006}]'
+
+sign
+sendrawtransaction 02000000000101cd8ffaab3214ac57fa120e00127f87025f74f22f6ebaff8bddd18e0340b2c0210300000000ffffffff01c027090000000000220020a68ee92dfe9290a4a746fa14dacf2479c040202a8850f1827a448043caafa05102473044022009de91438b3284592c324a87679508f2d839f503af9ab97b15330789b68e323f0220163721b965b9e912328c74b621c2dc87dc92b97108445d8e8c243a968006ebf101210382e6d361204f191bdbe2451309aa05c0728d3f0f4bfeb0795d7c592bf679285200000000
+
+
+"txid": "ac93113ed19f35abbd1f3f24aac64928983d28c638cb97b2a072d73aaea94f47",
+```
+
+## P2WPkH
+```
+createrawtransaction '[{"txid":"21c0b240038ed1dd8bffba6e2ff2745f02877f12000e12fa57ac1432abfa8fcd","vout":4}]' '[{"tb1q568wjt07j2g2ff6xlg2d4ney08qyqgp23pg0rqn6gjqy8j405pgs94zj30":0.006}]'
+
+
+signraw
+02000000000101cd8ffaab3214ac57fa120e00127f87025f74f22f6ebaff8bddd18e0340b2c0210200000000ffffffff0100350c00000000001600140a2d9c7162ba11334e324e7a490d3a6ef4750e0c02473044022069d204161d72426c521f32e50c8c6126c9d612a536e732d4c4e1002ef138714e022008ba9b9e877cb0deed00c24ee67c132ae605e63dab0dec9f9ce53ae6ae01bf78012103f2d46ca207bf8b3a895fd499649f3edac89d92329a12c86fcb5f311dc0d36c1f00000000
+
+
+"txid": "1daf9ee2c42334c9dc3e63f80be43f5e03b164d0e9a72dea48209b3c548bf27a"
+
+mzN9qyauV8xd2LMKGQY6bMPXJ5q9aPtHRf
+msDkNTynoVbEmHyv2X2DXNGKHVUuesLkAw
+```
+
+
+# P2PK
+## input 
+|フィールド|内容|
+リトルエンディアンとビッグエンディアンの自動化変換の練習
+
+
+
+## 4つに分けたものを統合する
+
+受け取りアドレス
+tb1qqmpqm3sumvvhws47hqmq30xczw42p70lf0gtrw
+```
+
+
+createrawtransaction '[{"txid":"11fb483ddadb28572dc7888e7608e4d5f8f7a918bbca24fa863227ef81cd35af","vout":0}]' '[{"tb1qqmpqm3sumvvhws47hqmq30xczw42p70lf0gtrw":0.004}]'
+
+signrawtransactionwithwallet 
+
+0200000001af35cd81ef273286fa24cabb18a9f7f8d5e408768e88c72d5728dbda3d48fb110000000000ffffffff01801a06000000000016001406c20dc61cdb197742beb83608bcd813aaa0f9ff00000000
+
+sendrawtransaction 0200000001af35cd81ef273286fa24cabb18a9f7f8d5e408768e88c72d5728dbda3d48fb11000000006a47304402203b67ead7da8b8d5a5a6be8f8fe94f89de830ab21dba8a718d052972f4e211bc902202a2a349caefc63cac50dcfb9a8a0ee767ae03e84a0767388e96c0814505bc19901210268b0b2e372fbb431e87d4cad9f0bb50ff67dbb9f330481231db3959369cc80c2ffffffff01801a06000000000016001406c20dc61cdb197742beb83608bcd813aaa0f9ff00000000
+
+txid 1db1eab3b15c78bbb4ce1854c6d364fb7b7681d57abfc170715ee039bbef179c
+
+```
+### inputがP2SH
+```
+createrawtransaction '[{"txid":"4d888ddd116879ed031037fa4711eac4b49d6c795d11a7827d52e2125e994e53","vout":0}]' '[{"tb1qqmpqm3sumvvhws47hqmq30xczw42p70lf0gtrw":0.0078}]'
+
+
+```
+
+### inputがP2WSH
+```
+createrawtransaction '[{"txid":"ac93113ed19f35abbd1f3f24aac64928983d28c638cb97b2a072d73aaea94f47","vout":0}]' '[{"tb1qqmpqm3sumvvhws47hqmq30xczw42p70lf0gtrw":0.005}]'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------　
+不明
+## P2PkH
+```
+createrawtransaction '[{"txid":"ac93113ed19f35abbd1f3f24aac64928983d28c638cb97b2a072d73aaea94f47","vout":0}]' '[{"tb1qpgkecutzhggnxn3jfeayjrf6dm682rsvtsmqn7":0.008}]'
+
+
+```
+
+
+input
+0200000001cd8ffaab3214ac57fa120e00127f87025f74f22f6ebaff8bddd18e0340b2c0210000000000ffffffff02c0270900000000001976a914c76c3c1e6c8493a5e932cb4ba279fd5fbed06cab88aca0860100000000001976a9147acb7a1e9c6e053e6116895c41fbda1ba5a8de0488ac00000000
+
+
+txid 11fb483ddadb28572dc7888e7608e4d5f8f7a918bbca24fa863227ef81cd35af
