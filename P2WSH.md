@@ -1,6 +1,6 @@
 ### P2WSH(マルチシグ)
 
-保管庫が多重署名
+
 
 ### 基本の呼び出し
 ```
@@ -89,3 +89,9 @@ bitcoin-cli importmulti '[{"desc":"wsh(multi(2,0286d64024cceaddec4edb706d3558e3e
 ```
 createmultisigでできた情報の中から"descriptor"を使用する。
 timestampとwatchonlyは忘れない
+
+
+
+
+メモ
+保管庫が多重署名
