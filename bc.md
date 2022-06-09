@@ -131,7 +131,7 @@ tb1qqmpqm3sumvvhws47hqmq30xczw42p70lf0gtrw
 
 createrawtransaction '[{"txid":"11fb483ddadb28572dc7888e7608e4d5f8f7a918bbca24fa863227ef81cd35af","vout":0}]' '[{"tb1qqmpqm3sumvvhws47hqmq30xczw42p70lf0gtrw":0.004}]'
 
-signrawtransactionwithwallet 
+signrawtransactionwithwallet
 
 0200000001af35cd81ef273286fa24cabb18a9f7f8d5e408768e88c72d5728dbda3d48fb110000000000ffffffff01801a06000000000016001406c20dc61cdb197742beb83608bcd813aaa0f9ff00000000
 

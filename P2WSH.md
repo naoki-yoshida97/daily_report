@@ -78,5 +78,14 @@ bitcoin-cli createmultisig 2 '["0286d64024cceaddec4edb706d3558e3e1a9a424dbf3807e
 
 ```
 
-
-
+### 自分のワレットにimport
+```
+bitcoin-cli importmulti '[{"desc":"wsh(multi(2,0286d64024cceaddec4edb706d3558e3e1a9a424dbf3807e1ed465b2e6b835629e,03c9eea0dc71542c6226cf7297fd070447e1f0c6bd84b73afb526a55f6c17f4428,033979d9ede19c1b6a7b40a23d648ccad1a5cd552b788c4ca877f0109b841c53b0))#09zuawsw","timestamp":"now","watchonly": true}]'
+[
+  {
+    "success": true
+  }
+]
+```
+createmultisigでできた情報の中から"descriptor"を使用する。
+timestampとwatchonlyは忘れない
